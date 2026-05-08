@@ -702,41 +702,35 @@ p.mini {
 @media (max-width: 768px) {
 
   body {
-    padding: 10px;
-    padding-top: 120px;
+    padding: 8px;
+    padding-top: 90px;
   }
 
   /* HEADER */
 
   .header {
-    padding: 10px 0;
+    padding: 12px 16px;
+    border-radius: 18px;
   }
 
   .header-content {
     flex-direction: column;
-    gap: 15px;
-    padding: 10px;
+    gap: 14px;
   }
 
   .logo {
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
   }
 
   .nav {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 14px;
   }
 
   .nav a {
-    font-size: 18px;
-  }
-
-  .header-btn {
-    width: 100%;
-    text-align: center;
-    padding: 14px;
     font-size: 18px;
   }
 
@@ -744,149 +738,181 @@ p.mini {
 
   .hero {
     min-height: auto;
-    padding: 80px 20px;
-    border-radius: 20px;
+
+    padding:
+      110px 20px
+      60px;
+
+    border-radius: 24px;
+
+    background-position: center;
   }
 
   .hero-content {
-    padding: 10px;
+    padding: 0;
   }
 
   .hero h1 {
-    font-size: 42px;
-    line-height: 1.1;
-    margin-bottom: 20px;
+    font-size: 46px;
+
+    line-height: 1.05;
+
+    margin-bottom: 24px;
   }
 
   .hero-sub {
-    font-size: 20px;
+    font-size: 21px;
+
     line-height: 1.5;
-    margin-bottom: 30px;
+
+    margin-bottom: 34px;
   }
 
   .cta-button {
     width: 100%;
+
     font-size: 22px;
+
     padding: 18px;
+
+    border-radius: 18px;
   }
+
+  /* HERO POINTS */
 
   .hero-points {
     flex-direction: column;
-    gap: 15px;
-    margin-top: 30px;
+
+    gap: 14px;
+
+    margin-top: 28px;
   }
 
   .hero-point {
     width: 100%;
+
     font-size: 17px;
+
     padding: 16px;
   }
 
-  /* ЗАГОЛОВКИ */
+  /* SECTION TITLES */
 
   h2 {
-    font-size: 34px;
+    font-size: 38px;
+
     text-align: center;
+
+    margin-bottom: 30px;
   }
 
   h3 {
-    font-size: 28px;
-    text-align: center;
+    font-size: 30px;
   }
 
-  p {
-    font-size: 20px;
-  }
-
-  /* СЕКЦИИ */
-
-  .section {
-    padding: 30px 10px;
-  }
-
-  .works-section {
-    padding: 20px 15px;
-  }
-
-  /* КАРТОЧКИ */
+  /* WORKS */
 
   .works-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+
+    gap: 28px;
   }
 
   .work-card {
-    max-width: 100%;
+    width: 100%;
+
     padding: 14px;
+
+    border-radius: 22px;
   }
 
   .card-slider {
-    height: 300px;
+    height: 340px;
+  }
+
+  .card-slide {
+    object-fit: cover;
   }
 
   .work-title {
-    font-size: 24px;
+    font-size: 28px;
+
+    margin-top: 16px;
   }
 
   .work-location {
     font-size: 18px;
   }
 
-  /* КНОПКИ СЛАЙДЕРА */
+  /* SLIDER BUTTONS */
 
   .prev,
   .next {
-    width: 38px;
-    height: 38px;
-    font-size: 22px;
+    width: 42px;
+    height: 42px;
+
+    font-size: 24px;
   }
 
-  /* ГАЛЕРЕЯ */
+  /* REVIEWS */
 
-  .gallery-image {
-    max-width: 95%;
-    max-height: 70%;
+  .reviews-grid {
+    grid-template-columns: 1fr;
   }
 
-  .gallery-close {
-    font-size: 70px;
-    top: 10px;
-    right: 20px;
+  .review-card {
+    padding: 24px;
   }
 
-  .gallery-prev,
-  .gallery-next {
-    width: 45px;
-    height: 45px;
-    font-size: 26px;
+  .review-card p {
+    font-size: 18px;
   }
 
-  /* WHY ME */
+  /* ABOUT */
 
   .cards {
     grid-template-columns: 1fr;
-    padding: 20px;
+
+    gap: 20px;
   }
 
   .block {
-    padding: 20px;
+    padding: 22px;
   }
 
-  /* WHATSAPP */
+  /* FLOATING BUTTON */
 
-.floating-wa {
-  left: 15px;
-  right: 15px;
+  .floating-wa {
+    left: 10px;
+    right: 10px;
 
-  bottom: 15px;
+    bottom: 10px;
 
-  max-width: none;
+    width: auto;
 
-  width: auto;
+    max-width: none;
 
-  padding: 16px;
+    justify-content: center;
 
-  font-size: 17px;
+    font-size: 16px;
 
-  border-radius: 20px;
+    padding: 16px;
+
+    border-radius: 18px;
+  }
+
+  /* GALLERY */
+
+  .gallery-image {
+    max-width: 95%;
+    max-height: 75%;
+  }
+
+  .gallery-close {
+    top: 12px;
+    right: 20px;
+
+    font-size: 60px;
+  }
+
 }
