@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -58,16 +59,55 @@ a:active {
     gap: 20px;
     backdrop-filter: blur(10px);
 }
-@media (max-width: 768px) {
-    .container {
-    grid-template-columns: 1fr;
-    }
-}
+
 .hero {
-  margin-top: 80px;
-  margin-bottom: 60px;
+  position: relative;
+
+  min-height: 92vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   text-align: center;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  background: url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.72),
+      rgba(0,0,0,0.78)
+    );
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1000px;
+
+  padding: 40px;
+}
+.hero h1 {
+  font-size: 82px;
+  line-height: 1.05;
+
+  margin-bottom: 30px;
+
+  font-weight: 800;
+
+  color: white;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -86,12 +126,7 @@ a:active {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+
 .section {
   margin-top: 60px;
   padding: 40px 20px;
@@ -111,20 +146,28 @@ button:hover {
   background: #ff3c00;
 }
 .cta-button {
-    display: inline-block;
-    padding: 18px 40px;
-    background: linear-gradient(90deg, #ff3c00, #ff8c00);
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 12px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 60, 0, 0.4);
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 22px 48px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(45deg, #ff6600, #ff3c00);
+
+  color: white;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  transition: 0.3s;
 }
 .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 60, 0, 0.6);
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(255,100,0,0.35);
 }
 .cta-button.whatsapp {
     background: linear-gradient(90deg, #2bff00, #029121);
@@ -137,14 +180,6 @@ button:hover {
 }
 .cta-button.vk {
     background: linear-gradient(90deg, #0066ff, #0077ff);
-}
-h1 {
-    color: darkred;
-    font-size: 36px;
-    text-align: center;
-    background: linear-gradient(45deg, rgb(0, 4, 255), rgb(0, 247, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .block {
@@ -172,11 +207,7 @@ h1 {
 .cards img:hover {
     transform: scale(1.03);
 }
-@media (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-}
+
 .final {
     margin-top: 60px;
     text-align: center;
@@ -462,7 +493,7 @@ p.mini {
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 .work-card:hover {
   transform: translateY(-8px);
@@ -578,30 +609,50 @@ p.mini {
 }
 .floating-wa {
   position: fixed;
-  right: 25px;
-  bottom: 25px;
 
-  background: #1faa00;
+  right: 20px;
+  bottom: 20px;
+
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 16px 24px;
+
+  max-width: 320px;
+  width: auto;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(45deg,#0066ff,#8a00ff);
+
   color: white;
 
-  padding: 16px 22px;
-  border-radius: 50px;
-
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
 
-  z-index: 9999;
+  text-decoration: none;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow:
+    0 10px 35px rgba(0,0,0,0.45);
 
   transition: 0.3s;
+
+  text-align: center;
+
+  line-height: 1.3;
 }
 
 .floating-wa:hover {
   transform: translateY(-4px);
 }
 .hero-points {
-  margin-top: 35px;
+  margin-top: 45px;
 
   display: flex;
   justify-content: center;
@@ -614,14 +665,14 @@ p.mini {
 
   border: 1px solid rgba(255,255,255,0.08);
 
-  padding: 14px 22px;
+  padding: 16px 24px;
 
-  border-radius: 14px;
+  border-radius: 16px;
 
   font-size: 18px;
   color: #ddd;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
 
   transition: 0.3s;
 }
@@ -629,4 +680,213 @@ p.mini {
 .hero-point:hover {
   transform: translateY(-4px);
   border-color: #ff3c00;
+}
+.hero-sub {
+  max-width: 850px;
+
+  margin: 0 auto 40px;
+
+  font-size: 28px;
+  line-height: 1.6;
+
+  color: rgba(255,255,255,0.82);
+}
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+    padding-top: 120px;
+  }
+
+  /* HEADER */
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  .header-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 18px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: auto;
+    padding: 80px 20px;
+    border-radius: 20px;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 22px;
+    padding: 18px;
+  }
+
+  .hero-points {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .hero-point {
+    width: 100%;
+    font-size: 17px;
+    padding: 16px;
+  }
+
+  /* ЗАГОЛОВКИ */
+
+  h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  /* СЕКЦИИ */
+
+  .section {
+    padding: 30px 10px;
+  }
+
+  .works-section {
+    padding: 20px 15px;
+  }
+
+  /* КАРТОЧКИ */
+
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .work-card {
+    max-width: 100%;
+    padding: 14px;
+  }
+
+  .card-slider {
+    height: 300px;
+  }
+
+  .work-title {
+    font-size: 24px;
+  }
+
+  .work-location {
+    font-size: 18px;
+  }
+
+  /* КНОПКИ СЛАЙДЕРА */
+
+  .prev,
+  .next {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+  }
+
+  /* ГАЛЕРЕЯ */
+
+  .gallery-image {
+    max-width: 95%;
+    max-height: 70%;
+  }
+
+  .gallery-close {
+    font-size: 70px;
+    top: 10px;
+    right: 20px;
+  }
+
+  .gallery-prev,
+  .gallery-next {
+    width: 45px;
+    height: 45px;
+    font-size: 26px;
+  }
+
+  /* WHY ME */
+
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .block {
+    padding: 20px;
+  }
+
+  /* WHATSAPP */
+
+.floating-wa {
+  left: 15px;
+  right: 15px;
+
+  bottom: 15px;
+
+  max-width: none;
+
+  width: auto;
+
+  padding: 16px;
+
+  font-size: 17px;
+
+  border-radius: 20px;
 }
