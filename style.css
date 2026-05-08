@@ -26,6 +26,18 @@ a:hover {
     background-color: rgb(138, 100, 100);
     transform: scale(1.1);
         }
+a.max:hover {
+    color: rgba(255, 4, 4, 0.781);
+}
+a.tme:hover {
+    color: rgb(255, 167, 4);
+}
+a.vk:hover {
+    color: rgba(26, 224, 8, 0.856);
+}
+a.whatsapp:hover {
+    color: rgba(25, 10, 238, 0.781);
+}
 a:active {
     transform: scale(0.95);
 }
