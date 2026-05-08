@@ -8,6 +8,7 @@ body {
   padding: 20px;
   padding-top: 80px;
   line-height: 1.6;
+  font-size: 150%;
 }
 h1, h3, p, ul, img, a {
   margin-bottom: 15px;
@@ -104,6 +105,18 @@ button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(255, 60, 0, 0.6);
 }
+.cta-button.whatsapp {
+    background: linear-gradient(90deg, #2bff00, #029121);
+}
+.cta-button.tme {
+      background: linear-gradient(90deg, #0361ad, #015d92);
+}
+.cta-button.max {
+    background: linear-gradient(90deg, #5900ff, #7700ff);
+}
+.cta-button.vk {
+    background: linear-gradient(90deg, #0066ff, #0077ff);
+}
 h1 {
     color: darkred;
     font-size: 36px;
@@ -115,7 +128,7 @@ h1 {
 p {
     color: #ccc;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .block {
@@ -290,9 +303,12 @@ p {
     font-weight: 600;
     margin-top: 15px;
 }
-.work-location {
-  font-size: 18px;
+p.work-location {
+  font-size: 17px;
     color: #aaa;
+}
+p.mini {
+  font-size: 20px;
 }
 .lightbox {
   position: fixed;
@@ -384,7 +400,7 @@ p {
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size: 40px;
+  font-size: 100px;
   color: #fff;
   cursor: pointer;
 }
@@ -393,13 +409,19 @@ p {
 .gallery-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
+  margin-top: -27.5px; /* половина высоты кнопки */
+
+  width: 55px;
+  height: 55px;
+  font-size: 32px;
+
+  border: none;
+  border-radius: 50%;
   background: rgba(0,0,0,0.5);
   color: white;
-  border: none;
   cursor: pointer;
-  padding: 10px;
+
+  z-index: 10;
 }
 
 .gallery-prev { left: 20px; }
