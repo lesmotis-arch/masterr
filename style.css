@@ -34,10 +34,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
-    color: rgba(25, 10, 238, 0.781);
-    transform: scale(1.1);
-        }
+
 a.max:hover {
     color: rgba(255, 4, 4, 0.781);
 }
@@ -541,11 +538,6 @@ p.mini {
   transform: translateY(-50%) scale(1.08);
 }
 
-/* Текст */
-.work-title {
-  margin-top: 10px;
-  font-weight: 600;
-}
 
 .work-location {
   font-size: 14px;
@@ -583,4 +575,28 @@ p.mini {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+.floating-wa {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+
+  background: #1faa00;
+  color: white;
+
+  padding: 16px 22px;
+  border-radius: 50px;
+
+  font-weight: 700;
+  font-size: 18px;
+
+  z-index: 9999;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+  transition: 0.3s;
+}
+
+.floating-wa:hover {
+  transform: translateY(-4px);
 }
