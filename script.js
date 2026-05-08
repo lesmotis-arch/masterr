@@ -109,3 +109,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+const hiddenBlocks = document.querySelectorAll('.hidden');
+
+window.addEventListener('scroll', () => {
+  hiddenBlocks.forEach(block => {
+    const blockTop = block.getBoundingClientRect().top;
+
+    if (blockTop < window.innerHeight - 100) {
+      block.classList.add('show');
+    }
+  });
+});
