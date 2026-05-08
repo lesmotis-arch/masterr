@@ -600,3 +600,33 @@ p.mini {
 .floating-wa:hover {
   transform: translateY(-4px);
 }
+.hero-points {
+  margin-top: 35px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-point {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 14px 22px;
+
+  border-radius: 14px;
+
+  font-size: 18px;
+  color: #ddd;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+.hero-point:hover {
+  transform: translateY(-4px);
+  border-color: #ff3c00;
+}
