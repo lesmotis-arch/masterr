@@ -245,7 +245,7 @@ p {
 }
 
 .whyme-title {
-    font-size: 72px;
+    font-size: clamp(36px, 8vw, 72px);
     font-weight: 800;
     text-align: center;
     margin-bottom: 70px;
@@ -889,7 +889,8 @@ p {
     object-fit: contain;
 }
 .container {
-    max-width: min(1600px, 100%);
+    max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -1257,6 +1258,7 @@ p {
 
     .whyme-card {
         flex-direction: column;
+        width: 100%;
     }
     .whyme-grid {
         grid-template-columns: 1fr;
