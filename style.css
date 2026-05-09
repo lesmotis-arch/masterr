@@ -1258,7 +1258,10 @@ p {
 
     .whyme-card {
         flex-direction: column;
-        width: 100%;
+        align-items: flex-start;
+
+        padding: 24px;
+        gap: 14px;
     }
     .whyme-grid {
         grid-template-columns: 1fr;
@@ -1266,12 +1269,15 @@ p {
 
 .whyme-card h3 {
         min-width: unset;
+        width: 100%;
+        font-size: 28px;
     }
     .whyme-title {
         font-size: 52px;
     }
     .whyme-card p {
         font-size: 18px;
+        line-height: 1.5;
     }
     
   .gallery-modal img {
