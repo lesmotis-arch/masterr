@@ -214,7 +214,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 24px;
+    gap: 20px;
 
     max-width: 1600px;
     margin: 0 auto;
