@@ -212,7 +212,7 @@ p {
 
 .whyme-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 24px;
 
@@ -889,7 +889,7 @@ p {
     object-fit: contain;
 }
 .container {
-    max-width: 1800px;
+    max-width: min(1600px, 100%);
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -1040,10 +1040,11 @@ p {
 }
 
 .quote {
-        font-size: clamp(36px, 5vw, 72px);
-    line-height: 1.1;
+        font-size: clamp(32px, 5vw, 72px);
+    line-height: 1.2;
     max-width: 1200px;
     margin: 80px auto 0;
+    text-align: center;
 }
 
 .gallery-prev {
@@ -1090,7 +1091,7 @@ p {
   }
 
   .nav {
-    gap: 18px;
+    gap: 20px;
 
     flex-wrap: wrap;
 
@@ -1125,9 +1126,9 @@ p {
     }
 
   .hero-content {
-    padding: 0;
-  }
-
+    width: min(900px, 100%);
+    padding: 0 20px;
+}
 
 
 
@@ -1215,8 +1216,8 @@ p {
   }
 
   .floating-wa {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 
     right: 15px;
     bottom: 15px;
@@ -1224,6 +1225,9 @@ p {
     left: auto;
 
     padding: 0;
+}
+.floating-wa img {
+    width: 30px;
 }
 
   .about-card {
