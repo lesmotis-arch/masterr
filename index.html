@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
     <header class="header">
   <div class="header-content">
     
@@ -14,7 +15,7 @@
 
     <nav class="nav">
       <a href="#work">Работы</a>
-      <a href="#about">Обо мне</a>
+      <a href="#whyme">Обо мне</a>
       <a href="#contact">Контакты</a>
     </nav>
 
@@ -244,36 +245,80 @@
   </div><!-- ключ-->
   </section>
   <hr />
-
     <h2>Почему выбирают меня</h2>
-<div class="whyme block hidden" id="about">
-  <p>✔ Работаю без посредников — вы платите только за работу, без накруток</p>
-  
-  <p>✔ Фиксированная цена — озвучиваю стоимость до начала и не меняю в процессе</p>
-  
-  <p>✔ Аккуратная работа — делаю как для себя, без косяков и переделок</p>
-  
-  <p>✔ Соблюдаю сроки — не затягиваю ремонт на месяцы</p>
-  
-  <p>✔ Всегда на связи — отвечаю и консультирую на каждом этапе</p>
-  
-  <p>✔ Реальные работы — все фото на сайте мои, без чужих картинок</p>
+    <div class="advantage-grid">
+    <div class="advantage-card" id="whyme">
+        <span>✔</span>
+        <p>Работаю без посредников — вы платите только за работу, без накруток</p>
+    </div>
+    <div class="advantage-card">
+        <span>✔</span>
+        <p>Фиксированная цена — озвучиваю стоимость до начала и не меняю в процессе</p>
+    </div>
+    <div class="advantage-card">
+        <span>✔</span>
+        <p>Аккуратная работа — делаю как для себя, без косяков и переделок</p>
+    </div>
+<div class="advantage-card">
+        <span>✔</span>
+        <p>Соблюдаю сроки — не затягиваю ремонт на месяцы</p>
+    </div>
+    <div class="advantage-card">
+        <span>✔</span>
+        <p>Всегда на связи — отвечаю и консультирую на каждом этапе</p>
+    </div>
+    <div class="advantage-card">
+        <span>✔</span>
+        <p>Реальные работы — все фото на сайте мои, без чужих картинок</p>
+    </div>
+  </div>
 </div>
 
+<section class="whyme" id="whyme">
 
- <h3>О мастере</h3>
-<div class="about block cards hidden">
+    <h2 class="whyme-title">
+        О мастере
+    </h2>
 
+    <div class="whyme-grid">
 
-  <p>Работаю более 12 лет и сделал более 20 объектов — от простой укладки плитки до ремонта "под ключ".</p>
-  <p>Даю рекомендации по материалам и не пропадаю после сдачи объекта.</p>
-  <p>Главное для меня — сделать аккуратно и без переделок, чтобы клиент не возвращался с проблемами.</p>
+        <div class="whyme-card">
+            <h3>12+ лет опыта</h3>
 
+            <p>
+                Работаю более 12 лет и сделал более 20 объектов —
+                от укладки плитки до ремонта ванной комнаты под ключ.
+            </p>
+        </div>
+
+        <div class="whyme-card">
+            <h3>Помощь с материалами</h3>
+
+            <p>
+                Подскажу какие материалы лучше выбрать,
+                чтобы не переплачивать.
+            </p>
+        </div>
+
+        <div class="whyme-card">
+            <h3>Аккуратная работа</h3>
+
+            <p>
+                Главное для меня — сделать качественно,
+                без переделок и проблем.
+            </p>
+        </div>
+
+    </div>
+
+</section>
 </div>
+<div class="quote">
 <h2>Работаю так, чтобы вы один раз сделали ремонт и больше к нему не возвращались.</h2>
 </div>
+</div>
 
-<div class="contact-info" id="contact">
+<div class="contact-info">
   <hr />
 <section class="contact-section">
 
@@ -290,9 +335,9 @@
         <p>✓ Гарантия на работы</p>
 
     </div>
-<div class="contact-buttons">
+<div class="contact-buttons" id="contact">
 
-  <a href="https://api.whatsapp.com/send/?phone=79517537855&text&type=phone_number&app_absent=0" class="floating-wa">
+  <a href="https://wa.me/+79517537855" target="_blank" class="floating-wa">
     <img src="img/whatsapp.svg" alr="WhatsApp">
   </a>
   
@@ -313,6 +358,7 @@
 </section>
 
 
+</div>
 </div>
 </div>
 <div class="gallery-modal" id="galleryModal">
