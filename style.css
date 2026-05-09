@@ -89,7 +89,7 @@ p {
 .nav {
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: clamp(40px, 5vw, 90px);
 }
 
 .nav a {
