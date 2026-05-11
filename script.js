@@ -230,3 +230,22 @@ faqItems.forEach(item => {
     });
 
 });
+// =========================
+// До/После
+// =========================
+const sliders = document.querySelectorAll(".ba-slider");
+
+sliders.forEach(slider => {
+
+    slider.addEventListener("input", (e) => {
+
+        const value = e.target.value;
+
+        const wrapper = e.target.closest(".ba-wrapper");
+        const beforeBox = wrapper.querySelector(".before-box");
+
+        beforeBox.style.width = value + "%";
+
+    });
+
+});

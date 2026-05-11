@@ -379,6 +379,86 @@ nav a:hover {
     z-index: 1;
     pointer-events: none;
 }
+/* =========================
+   BEFORE/AFTER
+========================= */
+.before-after {
+    padding: 120px 20px;
+}
+
+.before-after h2 {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 30px;
+}
+.before-after p {
+  text-align: center;
+  color: #cfcfcf;
+  margin-bottom: 10px;
+}
+
+.ba-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 30px;
+}
+
+.ba-card {
+    background: #111;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.ba-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.after-img,
+.before-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.before-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ba-slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: ew-resize;
+}
+
+/* Полоска */
+
+.before-box::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: #ff7b00;
+    box-shadow: 0 0 20px #ff7b00;
+}
 
 /* =========================
    BUTTONS
@@ -1196,12 +1276,11 @@ nav a:hover {
     top: 8px;
     left: 8px;
     right: 8px;
-    flex-direction: column;
-    gap: 24px;
+    border-radius: 18px;
   }
 
   .header-contact {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
@@ -1219,26 +1298,34 @@ nav a:hover {
   }
 
   .header-content {
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
-    gap: 20px;
+    padding: 12px 16px;
 
-    padding: 14px 28px;
+    min-height: auto;
+    gap: 10px;
   }
 
   .logo {
     font-size: 30px;
   }
 
+  .logo img {
+    width: 70px;
+}
+
   .nav {
-    gap: 20px;
+    display: flex;
+    gap: 14px;
 
-    flex-wrap: wrap;
-
-    justify-content: center;
+    flex-wrap: nowrap;
   }
+  nav a {
+    font-size: 16px;
+    font-weight: 700;
+}
 
   .hero {
         min-height: 100vh;
@@ -1462,5 +1549,17 @@ nav a:hover {
         font-size: 18px;
     }
 
-}
 
+.before-after h2 {
+        font-size: 42px;
+    }
+
+    .ba-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ba-wrapper {
+        height: 350px;
+    }
+
+}
