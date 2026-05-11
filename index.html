@@ -7,20 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-  <div class="header-content">
-    
-    <div class="logo">Ремонт Псков</div>
+
+    <header>
+      <div class="header-content">
+
+    <div class="logo">
+        <a href="#">
+            <img src="img/logo.png" alt="Ремонт Псков">
+        </a>
+    </div>
 
     <nav class="nav">
-      <a href="#work">Работы</a>
-      <a href="#whyme">Обо мне</a>
-      <a href="#contact">Контакты</a>
+        <a href="#works">Работы</a>
+        <a href="#whyme">Обо мне</a>
+        <a href="#contacts">Контакты</a>
     </nav>
 
-  </div>
+    <div class="header-contact">
+
+        <a href="tel:+79372346400" class="header-phone">
+            +7 (937) 234-64-00
+        </a>
+
+        <span class="header-time">
+            Пн-Пт 10:00–22:00
+        </span>
+
+    </div>
+</div>
 </header>
+ <div class="container">
 <section class="hero">
 
     <div class="hero-content">
@@ -85,19 +101,19 @@
 <h2>Услуги</h2>
 <div class="cards">
   <div class="sant block hidden">
-<h3 style="font-size: 25px;"> Сантехнические работы</h3>
+<h3 class="service-title"> Сантехнические работы</h3>
  <p>Разводка труб, установка сантехники, подключение</p>
 </div>
 <div class="plit block hidden">
-    <h3 style="text-align: center;">Плиточные работы</h3>
+    <h3 class="service-title">Плиточные работы</h3>
     <p>Укладка плитки, душевые, запил под 45°</p>
 </div>
 <div class="repair block hidden">
-    <h3 style="text-align: center;">Ремонт под ключ</h3>
+    <h3 class="service-title">Ремонт под ключ</h3>
     <p>Полный ремонт ванной комнаты</p>
 </div>
 </div>
-<div class="works" id="work">
+<div class="works" id="works">
 
   <h2>Примеры работ</h2>
   <div class="gallery">
@@ -169,6 +185,7 @@
     <p class="desc">Укладка плитки, запил под 45°</p>
     <hr />
 </section>
+</div>
 
 
 <div class="gallery">
@@ -274,7 +291,7 @@
   </div>
 </div>
 
-<section class="whyme" id="whyme">
+<section class="whyme">
 
     <h2 class="whyme-title">
         О мастере
@@ -320,6 +337,52 @@
 
 <div class="contact-info">
   <hr />
+  <section class="faq" id="faq">
+
+    <h2 class="faq-title">
+        Возможно у Вас остались вопросы
+    </h2>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            <span>Кто закупает материалы?</span>
+            <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Материалы могу закупить я или вы сами — как вам удобнее.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            <span>Кто у вас работает?</span>
+            <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Работаю лично без посредников и случайных бригад.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            <span>Какие документы предоставляете?</span>
+            <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Договор, смету и расписку при необходимости.
+            </p>
+        </div>
+    </div>
+
+</section>
 <section class="contact-section">
 
     <div class="contact-info">
@@ -335,10 +398,10 @@
         <p>✓ Гарантия на работы</p>
 
     </div>
-<div class="contact-buttons" id="contact">
+<div class="contact-buttons" id="contacts">
 
   <a href="https://wa.me/+79517537855" target="_blank" class="floating-wa">
-    <img src="img/whatsapp.svg" alr="WhatsApp">
+    <img src="img/whatsapp.svg" alt="WhatsApp">
   </a>
   
 
@@ -359,8 +422,7 @@
 
 
 </div>
-</div>
-</div>
+
 <div class="gallery-modal" id="galleryModal">
   <span class="gallery-close">&times;</span>
 
